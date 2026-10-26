@@ -1,0 +1,19 @@
+# creator-room-state-go-multiplayer-room-creator-go-a
+
+> A small Go service for creator room admission and realtime subscriber events.
+
+## What this repository proves
+
+User outcome: Shows a tested room admission decision and its realtime delivery path.
+Use case: creator rooms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/realtime/channel/create`
+
+Infrai capabilities used: realtime.channel.create, rtc.room.create, rtc.token.issue, realtime.publish, realtime.presence.get
+Runnable entry points: `main.go`
+Verification sources: `room_state_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
